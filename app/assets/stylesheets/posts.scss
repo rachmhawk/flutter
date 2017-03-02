@@ -1,0 +1,43 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post{
+  max-width: 450px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.profile-section{
+  width: 75px;
+  padding-right: 10px;
+  float: left;
+}
+
+.profile-section img{
+  max-width: 100%;
+  border-radius: 50%;
+
+}
+
+.content{
+  width: calc(100% - 135px);
+  float: left;
+}
+
+.author{
+  margin: 0px;
+}
+
+.post .actions{
+  width: 50px;
+  float: left;
+  font-size: 25px;
+  text-align: center;
+
+  .actions a {
+    text-decoration:  none !important;
+  }
+}

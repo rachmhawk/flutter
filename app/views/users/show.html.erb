@@ -1,0 +1,7 @@
+<h1> <%= @user.name %> </h1>
+
+<% @posts.each do |post| %>
+
+  <%= render partial: 'posts/post', locals: {post: post}%>
+
+<%end%>

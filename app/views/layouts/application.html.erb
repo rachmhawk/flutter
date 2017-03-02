@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flutter</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+
+  <header>
+    <div class = "left">
+        <h1> <%= link_to 'FLUTTER' , root_path %></h1>
+    </div>
+
+    <div class = "right">
+      <% if current_user %>
+
+
+
+        Welcome <%= current_user %>! <%= link_to '{logout}', logout_path %>
+
+      <% else %>
+
+        <%= link_to 'Sign Up', register_path %>
+        <%= link_to 'Login', login_path %>
+      <% end %>
+    </div>
+  </header>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+header{
+
+  border-bottom: 2px solid #333;
+  padding-bottom: 25px ;
+  padding-top: 25px ;
+  margin-bottom: 25px;
+  overflow: auto;
+  text-transform: none;
+  text-decoration: none;
+
+}
+
+header h1{
+
+  margin: 0;
+}
+
+header h1 a,
+header h1 a:visted, header h1 a:hover {
+text-decoration: none;
+color: #000;
+background: none;
+}
+
+.left{
+
+  width: 50%;
+  float: left;
+}
+
+.right{
+
+  width: 50%;
+  float: left;
+  text-align: right;
+}
